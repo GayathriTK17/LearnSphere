@@ -1,0 +1,273 @@
+FrontEnd code(in HTML):
+<!-- ========================== login.html ========================== -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - AI Learn</title>
+</head>
+<body>
+  <h2>Login</h2>
+  <form action="/auth/login" method="POST">
+    <input type="email" name="email" placeholder="Email" required><br>
+    <input type="password" name="password" placeholder="Password" required><br>
+    <a href="change-password.html">Forgot Password?</a><br><br>
+    <button type="submit">Login</button>
+  </form>
+  <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+</body>
+</html>
+
+<!-- ========================== signup.html ========================== -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup - AI Learn</title>
+</head>
+<body>
+  <h2>Sign Up</h2>
+  <form action="/auth/signup" method="POST">
+    <input type="email" name="email" placeholder="Email" required><br>
+    <input type="password" name="password" placeholder="Password" required><br>
+    <input type="password" name="confirm_password" placeholder="Confirm Password" required><br>
+    <button type="submit">Sign Up</button>
+  </form>
+  <p>Already have an account? <a href="login.html">Login</a></p>
+</body>
+</html>
+
+<!-- ========================== test1.html ========================== -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test 1 - AI Learn</title>
+</head>
+<body>
+  <h2>Skill Assessment - Part 1</h2>
+  <form action="test2.html">
+    <label>1. What is AI?</label><br>
+    <input type="text" name="q1"><br>
+    <label>2. Define Machine Learning:</label><br>
+    <input type="text" name="q2"><br>
+    <button type="submit">Next</button>
+  </form>
+</body>
+</html>
+
+<!-- ========================== test2.html ========================== -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test 2 - AI Learn</title>
+</head>
+<body>
+  <h2>Skill Assessment - Part 2</h2>
+  <form action="result.html">
+    <label>3. List any 2 AI applications:</label><br>
+    <input type="text" name="q3"><br>
+    <label>4. What is Deep Learning?</label><br>
+    <input type="text" name="q4"><br>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
+
+<!-- ========================== result.html ========================== -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Results - AI Learn</title>
+</head>
+<body>
+  <h2>Your Personalized Learning Plan</h2>
+  <p>Based on your answers, here is your tailored learning path:</p>
+  <ul>
+    <li>Intro to AI</li>
+    <li>Python Basics</li>
+    <li>ML Foundations</li>
+  </ul>
+  <a href="dashboard.html">Go to Dashboard</a>
+</body>
+</html>
+
+<!-- ========================== user-details.html ========================== -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Details - AI Learn</title>
+</head>
+<body>
+  <h2>Profile Details</h2>
+  <form action="dashboard.html">
+    <label>First Name:</label><input type="text" name="firstName"><br>
+    <label>Last Name:</label><input type="text" name="lastName"><br>
+    <label>Date of Birth:</label><input type="date" name="dob"><br>
+    <label>Gender:</label>
+    <select name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select><br>
+    <label>Age:</label><input type="number" name="age"><br>
+    <label>Email:</label><input type="email" name="email"><br>
+    <label>Phone Number:</label><input type="tel" name="phone"><br>
+    <label>Location:</label><input type="text" name="location"><br>
+    <label>Education:</label><input type="text" name="education"><br>
+    <label>Area of Interest:</label><input type="text" name="interest"><br>
+    <button type="submit">Update</button>
+  </form>
+</body>
+</html>
+
+<!-- ========================== dashboard.html ========================== -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard - AI Learn</title>
+</head>
+<body>
+  <h2>Welcome Back!</h2>
+  <nav>
+    <a href="chat.html">Chat</a> |
+    <a href="activity.html">Activity</a> |
+    <a href="notifications.html">Notifications</a>
+  </nav>
+  <section>
+    <p>Your AI-generated course modules will appear here.</p>
+  </section>
+</body>
+</html>
+
+<!-- ========================== chat.html ========================== -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat - AI Learn</title>
+</head>
+<body>
+  <h2>Chat with AI Tutor</h2>
+  <div id="chat-box"></div>
+  <input type="text" placeholder="Ask a question...">
+</body>
+</html>
+
+<!-- ========================== activity.html ========================== -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Activity - AI Learn</title>
+</head>
+<body>
+  <h2>Your Activity</h2>
+  <ul>
+    <li>Completed Test 1</li>
+    <li>Completed Test 2</li>
+  </ul>
+</body>
+</html>
+
+<!-- ========================== notifications.html ========================== -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Notifications - AI Learn</title>
+</head>
+<body>
+  <h2>Notifications</h2>
+  <ul>
+    <li>New course recommendations available</li>
+  </ul>
+</body>
+</html>
+
+<!-- ========================== change-password.html ========================== -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Password - AI Learn</title>
+</head>
+<body>
+  <h2>Change Password</h2>
+  <form action="password-updated.html">
+    <input type="password" placeholder="Old Password" required><br>
+    <input type="password" placeholder="New Password" required><br>
+    <button type="submit">Update</button>
+  </form>
+</body>
+</html>
+
+<!-- ========================== password-updated.html ========================== -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Updated - AI Learn</title>
+</head>
+<body>
+  <h2>Password Updated Successfully!</h2>
+  <a href="dashboard.html">Return to Dashboard</a>
+</body>
+</html>
+
+
+
+
+Backend Code(in Node.js):
+// Backend - AI Powered Personalized Learning App (Node.js + Express)
+
+const express = require('express');
+const app = express();
+const path = require('path');
+const bodyParser = require('body-parser');
+const session = require('express-session');
+const bcrypt = require('bcrypt');
+const fs = require('fs');
+const PORT = 3000;
+
+// In-memory user store (you can replace with a DB later)
+const users = [];
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static('public'));
+app.use(session({ secret: 'secret-key', resave: false, saveUninitialized: true }));
+
+// Serve frontend files
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'frontend', 'login.html')));
+
+// Routes
+app.post('/auth/signup', async (req, res) => {
+  const { email, password, confirm_password } = req.body;
+  if (password !== confirm_password) return res.send('Passwords do not match');
+  const hashedPassword = await bcrypt.hash(password, 10);
+  users.push({ email, password: hashedPassword });
+  res.redirect('/login.html');
+});
+
+app.post('/auth/login', async (req, res) => {
+  const { email, password } = req.body;
+  const user = users.find(u => u.email === email);
+  if (!user) return res.send('User not found');
+  const match = await bcrypt.compare(password, user.password);
+  if (!match) return res.send('Incorrect password');
+  req.session.user = user;
+  res.redirect('/dashboard.html');
+});
+
+app.post('/update-profile', (req, res) => {
+  const user = req.session.user;
+  if (!user) return res.status(403).send('Not logged in');
+  const updatedData = req.body;
+  Object.assign(user, updatedData);
+  res.redirect('/dashboard.html');
+});
+
+app.post('/change-password', async (req, res) => {
+  const { oldPassword, newPassword } = req.body;
+  const user = req.session.user;
+  if (!user) return res.status(403).send('Not logged in');
+  const match = await bcrypt.compare(oldPassword, user.password);
+  if (!match) return res.send('Old password incorrect');
+  user.password = await bcrypt.hash(newPassword, 10);
+  res.redirect('/password-updated.html');
+});
+
+// Start server
+app.listen(PORT, () => console.log(Server running on http://localhost:${PORT}));
